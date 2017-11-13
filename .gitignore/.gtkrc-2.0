@@ -1,0 +1,25 @@
+style "xfce-tasklist-style"
+{
+  XfceTasklist::max-button-length = -1
+  XfceTasklist::menu-max-width-chars = 128
+  XfceTasklist::minimized-icon-lucency = 0
+}
+class "XfceTasklist" style "xfce-tasklist-style"
+
+
+style "xfce-panel-image-style"
+{
+  XfcePanelImage::force-gtk-icon-sizes = true
+}
+class "XfcePanelImage" style "xfce-panel-image-style"
+
+style "gtk-theme-config-menu" {
+	base[NORMAL] = "#eeeeee"
+	bg[NORMAL] = "#eeeeee"
+	bg[ACTIVE] = "#eeeeee"
+	bg[INSENSITIVE] = "#eeeeee"
+	text[NORMAL] = "#262626"
+	fg[NORMAL] = "#262626"
+}
+
+widget_class"*<GtkMenu>*"style"gtk-theme-config-menu"
